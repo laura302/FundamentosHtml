@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Combinadores</title>
+    <style>
+        body {
+            background-color: rgb(159, 236, 164);
+        }
+        /* Selectores desendientes */
+        #descendiente p {
+            color: rgb(164, 59, 220);
+        }
+        /*Selector hijo directo*/
+        #directo > p {
+            background-color:aquamarine;
+        }
+        /* Selector adyacente*/
+        #adyacente + p {
+            color:cadetblue;
+            background-color: azure;
+        }
+        /*Selector hermano (sibling)*/
+        #hermano ~ p {
+            color:cadetblue;
+            background-color: darkkhaki;
+        }
+    </style>
+</head>
+<body>
+    <div id="Descendiente">
+        <p>Hijo 1</p>
+        <p>Hijo 2</p> 
+        <div>
+            <p>Nieto 1</p>
+        </div>
+    </div>     
+    <div id="directo">
+        <p> Hijo 1</p>
+        <p>Hijo 2</p>
+        <div>
+            <p>Nieto 1</p>
+        </div>
+    </div>
+    <div id="adyacente">Adyacente</div>    
+    <p>Parrafo adyacente</p>
+    <p>Parrafo siguiente</p>
+    <div id="Hermano">Hermano Mayor</div>
+    <p>Hermano pequeño 1</p>
+    <p>Hermano Pequeño 2</p>    
+
+</body>
+</html>
